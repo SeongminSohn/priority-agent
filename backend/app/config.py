@@ -7,7 +7,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
-    database_url: str = "postgresql+psycopg://postgres:postgres@localhost:5432/priority_agent"
+    database_url: str = "postgresql+psycopg://postgres:postgres@localhost:5433/priority_agent"
     gemini_api_key: SecretStr = SecretStr("")
     llm_provider: str = "google_genai"
     llm_model: str = "gemini-2.5-flash"
