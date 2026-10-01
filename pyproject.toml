@@ -13,7 +13,7 @@ dependencies = [
     "pgvector>=0.5.0",
     "psycopg[binary]>=3.3.6",
     "pydantic-settings>=2.15.0",
-    "sqlalchemy>=2.1.1",
+    "sqlalchemy[asyncio]>=2.1.1",
     "uvicorn[standard]>=0.54.0",
 ]
 
